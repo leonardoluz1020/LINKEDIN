@@ -1,0 +1,24 @@
+:root {
+    --fundo-escuro: #000;
+    --primaria: #70B5F9;
+    --transparente: rgba(255, 255, 255, 0.00);
+    --texto-primario: rgba(255, 255, 255, 0.90);
+    --texto-secundario: rgba(255, 255, 255, 0.60);
+    --texto-escuro: rgba(0, 0, 0, 0.75);
+    --font-family-roboto: "Roboto", Arial, sans-serif;
+    --fund-card: #1B2226;
+    --input: #38434F;
+}
+
+body {
+    background-color: var(--fundo-escuro);
+    color: var(--texto-primario);
+    font-family: var(--font-family-roboto);
+    font-weight: 400;
+    font-size: .75rem;
+}
+
+body header {
+    padding: .2rem;
+    background-color: var(--fund-card);
+}

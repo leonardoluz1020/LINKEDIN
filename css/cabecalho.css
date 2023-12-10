@@ -1,0 +1,44 @@
+body header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 7.5rem;
+    padding-left: 7rem;
+}
+
+body header .navbar_header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+body header .navbar_header nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body header .navbar_header nav ul li .barra {
+    border-left: 1px solid var(--texto-secundario);
+    padding-left: 1rem;
+}
+
+body header .input_pesquisa {
+    display: flex;
+    gap: 0.5rem;
+}
+
+body header .input_pesquisa input {
+    width: 280px;
+    border-radius: 4px;
+    background-color: var(--input);
+}
+
+body header .input_pesquisa input::placeholder {
+    background-image: url("../img/icone-busca.svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: left;
+    padding: 2rem;
+    color: var(--texto-primario);
+    font-weight: 400;
+}
