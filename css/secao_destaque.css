@@ -1,0 +1,71 @@
+main .card__destaque {
+    max-width: 780px;
+    border-radius: 16px;
+    background-color: var(--fund-card);
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .card__destaque .title {
+    padding: .8rem 0 0 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: var(--texto-primario);
+}
+
+main .card__destaque .container__card {
+    display: flex;
+    justify-content: center;
+    gap: 1.1rem;
+    padding: 0 1rem;
+}
+
+main .card__destaque .container__card .card__publicacao {
+    width: 33%;
+    border: 1px solid var(--texto-secundario);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .card__destaque .container__card .card__publicacao img {
+    width: 100%;
+    object-fit: cover;
+}
+
+main .card__destaque .container__card .card__publicacao h2 {
+    font-size: .75rem;
+    line-height: 1.25rem;
+    color: var(--texto-secundario);
+    padding: .6rem .250rem .250rem .6rem;
+
+}
+
+main .card__destaque .container__card .card__publicacao p {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: var(--texto-primario);
+    padding: 0 .250rem .250rem .6rem;
+}
+
+main .card__destaque .container__card .card__publicacao .like__comentario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding-top: .5rem;
+}
+
+main .card__destaque .container__card .card__publicacao .like__comentario .likes {
+    display: flex;
+    align-items: flex-start;
+}
+
+main .card__destaque .container__card .card__publicacao .like__comentario .comentarios {
+    color: var(--texto-secundario);
+    line-height: 1.25rem;
+    padding-left: 2.5rem;
+}
