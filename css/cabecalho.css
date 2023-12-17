@@ -1,44 +1,100 @@
 body header {
-    display: flex;
-    justify-content: flex-start;
-    gap: 7.5rem;
-    padding-left: 7rem;
+    width: 100%;
+    background-color: var(--fund-card);
+    position: fixed;
+    top: 0;
 }
 
-body header .navbar_header nav ul {
+body header nav ul {
+    padding: .7rem 0;
     display: flex;
-    align-items: center;
-    gap: 1.8rem;
-}
-
-body header .navbar_header nav ul li a {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-body header .navbar_header nav ul li .barra {
-    border-left: 1px solid var(--texto-secundario);
-    padding-left: 1rem;
+body header nav ul li a span,
+body header nav ul .hidden-search,
+body header nav ul .link_img-perfil,
+body header nav ul .hidden-solucoes,
+body header nav ul .hidden-premium {
+    display: none;
 }
 
-body header .input_pesquisa {
-    display: flex;
-    gap: 0.5rem;
+@media screen and (min-width: 720px) {
+
+    body header nav ul .hidden-solucoes,
+    body header nav ul .link_img-perfil,
+    body header nav ul .hidden-premium {
+        display: block;
+    }
+
+    body header nav ul {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        border-bottom: .5px solid var(--texto-borda);
+    }
+
+    body header nav ul .link_img-perfil a img {
+        width: 24px;
+        height: 24px;
+        border-radius: 66px;
+    }
+
+    body header nav ul .hidden-solucoes {
+        padding: .7rem .4rem;
+        border-left: 1px solid var(--texto-borda);
+    }
+
+    body header nav ul .hidden-premium a .premium {
+        display: block;
+        width: 55%;
+        text-align: center;
+        color: var(--cor-ouro);
+        padding-left: 1rem;
+        text-decoration: underline;
+    }
+
 }
 
-body header .input_pesquisa input {
-    width: 280px;
-    border-radius: 4px;
-    background-color: var(--input);
-}
+@media screen and (min-width: 1024px) {
+    body header nav ul .hidden-busca {
+        display: none;
+    }
 
-body header .input_pesquisa input::placeholder {
-    background-image: url("../img/icone-busca.svg");
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: left;
-    padding: 2rem;
-    color: var(--texto-primario);
-    font-weight: 400;
+    body header nav ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .1rem;
+        color: var(--texto-secundario);
+    }
+
+    body header nav ul li a span,
+    body header nav ul .hidden-search {
+        display: block;
+    }
+
+    body header nav ul .hidden-search input {
+        width: 280px;
+        padding: .6rem 0;
+        border-radius: 4px;
+        background-color: var(--input);
+    }
+
+    body header nav ul .hidden-search input::placeholder {
+        background-image: url("../img/icone-busca.svg");
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-position: left;
+        padding: 2rem;
+        color: var(--texto-primario);
+        font-weight: 400;
+    }
+
+    /* body header nav ul .link_img-perfil a span svg {
+    } */
+
 }

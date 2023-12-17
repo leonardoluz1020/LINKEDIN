@@ -13,63 +13,86 @@
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="css/perfil.css">
     <link rel="stylesheet" href="./css/secao_destaque.css">
+    <link rel="stylesheet" href="./css/card_lateral_visualizacao.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/flex.css">
 </head>
 
 <body>
     <header>
-        <div class="input_pesquisa">
-            <a href="#">
-                <img src="./img/Vector.svg" alt="logo Linkedin">
-            </a>
-            <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
-        </div>
-        <div class="navbar_header">
-            <nav>
-                <ul>
-                    <li><a href="#">
-                            <img src="./img/icone-inicio.svg" alt="icone inicio casa">
-                            Início
-                        </a></li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icone-minha-rede.svg" alt="icone minha rede">
-                            Minha rede
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icone-vagas.svg" alt="icone vagas">
-                            Vagas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icone-mensagens.svg" alt="icone caixa mensagem">
-                            Mensagens
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/icone-notificacoes.svg" alt="icone notificações">
-                            Notificações
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="barra">
-                            <img src="./img/icone-solucoes.svg" alt="icone soluções">
-                            Soluções
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./img/Vector.svg" alt="logo Linkedin">
+                    </a>
+                </li>
+                <li class="hidden-search">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                </li>
+                <li class="hidden-busca">
+                    <a href="#">
+                        <img src="./img/icone-busca.svg" alt="pesquisa">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icone-inicio.svg" alt="icone inicio casa">
+                        <span>Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icone-minha-rede.svg" alt="icone minha rede">
+                        <span>Minha rede</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icone-vagas.svg" alt="icone vagas">
+                        <span>Vagas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icone-mensagens.svg" alt="icone caixa mensagem">
+                        <span>Mensagens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/icone-notificacoes.svg" alt="icone notificações">
+                        <span>Notificações</span>
+                    </a>
+                </li>
+                <li class="link_img-perfil">
+                    <a href="#">
+                        <img src="./img/img_perfil-usuario.jpeg" alt="perfil">
+                        <span>Eu <svg role="none" aria-hidden="true" class="global-nav__icon global-nav__icon--small"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                data-supported-dps="16x16" data-test-icon="caret-small">
+
+                            </svg></span>
+                    </a>
+                </li>
+                <li class="hidden-solucoes">
+                    <a href="#" class="barra">
+                        <img src="./img/icone-solucoes.svg" alt="icone soluções">
+                        <span>Soluções</span>
+                    </a>
+                </li>
+                <li class="hidden-premium">
+                    <a href="#">
+                        <span class="premium">Experimente por apenas BRL0: Premium</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="profile">
+    <!-- <main>
+        <section class="perfil">
             <img class="foto-fundo" src="./img/Imagem de capa.png" alt="imagem de capa">
-            <a href="#"><img class="foto-perfil"
-                    src="https://media.licdn.com/dms/image/D4D35AQF5z-juFZvzCA/profile-framedphoto-shrink_200_200/0/1677676516057?e=1702684800&v=beta&t=FnKWrk5qzhH47Md8xF28WZ0eckPfXXlCmQcIPOvwWBw"
-                    alt="foto perfil"></a>
+            <a href="#"><img class="foto-perfil" src="./img/img_perfil-usuario.jpeg" alt="foto perfil"></a>
             <div class="container__personal-information">
                 <div class="container__information">
                     <h2>Leonardo Oliveira da Luz</h2>
@@ -161,6 +184,18 @@
             </div>
         </section>
     </main>
+    <aside>
+        <section class="card__visualizacao">
+            <h2>As pessoas também viram</h2>
+            <div>
+                <img src="./img/foto_morena_perfil.png" alt="morena perfil">
+                <h2>Morena Perfil</h2>
+                <p>Título, cargo e tecnologias. Lorem Ipsum
+                    Dolor sit Amet</p>
+                <button>Enviar mensagem</button>
+            </div>
+        </section>
+    </aside> -->
 </body>
 
 </html>
