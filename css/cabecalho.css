@@ -12,45 +12,45 @@ body header nav ul {
     align-items: center;
 }
 
+body header nav ul .link_img-perfil a img {
+    width: 27px;
+    height: 27px;
+    border-radius: 66px;
+}
+
 body header nav ul li a span,
-body header nav ul .hidden-search,
-body header nav ul .link_img-perfil,
-body header nav ul .hidden-solucoes,
-body header nav ul .hidden-premium {
+body header nav ul .hidden {
     display: none;
 }
 
 @media screen and (min-width: 720px) {
 
-    body header nav ul .hidden-solucoes,
+    body header nav ul .solucoes,
     body header nav ul .link_img-perfil,
-    body header nav ul .hidden-premium {
+    body header nav ul .premium,
+    body header nav ul .busca {
         display: block;
     }
 
     body header nav ul {
         padding: 0;
-        width: 100%;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
-        border-bottom: .5px solid var(--texto-borda);
+        border-bottom: 1px solid var(--texto-borda);
     }
 
-    body header nav ul .link_img-perfil a img {
-        width: 24px;
-        height: 24px;
-        border-radius: 66px;
-    }
-
-    body header nav ul .hidden-solucoes {
-        padding: .7rem .4rem;
+    body header nav ul .solucoes {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: .5rem .4rem;
         border-left: 1px solid var(--texto-borda);
     }
 
-    body header nav ul .hidden-premium a .premium {
+    body header nav ul .solucoes .premium a .premium {
         display: block;
-        width: 55%;
+        width: 75%;
         text-align: center;
         color: var(--cor-ouro);
         padding-left: 1rem;
@@ -60,9 +60,21 @@ body header nav ul .hidden-premium {
 }
 
 @media screen and (min-width: 1024px) {
-    body header nav ul .hidden-busca {
+    body header nav ul .busca {
         display: none;
     }
+
+    body header nav ul li a span,
+    body header nav ul .search {
+        display: block;
+    }
+
+    body header nav ul {
+        padding-left: 5rem;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
 
     body header nav ul li a {
         display: flex;
@@ -72,29 +84,28 @@ body header nav ul .hidden-premium {
         color: var(--texto-secundario);
     }
 
-    body header nav ul li a span,
-    body header nav ul .hidden-search {
-        display: block;
+    body header nav ul .icon_linkedin {
+        display: flex;
+        gap: .5rem;
     }
 
-    body header nav ul .hidden-search input {
+    body header nav ul .icon_linkedin .search input {
         width: 280px;
-        padding: .6rem 0;
+        margin-right: 2rem;
+        padding: .65rem 0 .65rem .65rem;
         border-radius: 4px;
         background-color: var(--input);
     }
 
-    body header nav ul .hidden-search input::placeholder {
+    body header nav ul .icon_linkedin .search input::placeholder {
         background-image: url("../img/icone-busca.svg");
         background-repeat: no-repeat;
-        background-size: 30px;
+        background-size: 25px;
         background-position: left;
+        opacity: .70;
         padding: 2rem;
         color: var(--texto-primario);
         font-weight: 400;
     }
-
-    /* body header nav ul .link_img-perfil a span svg {
-    } */
 
 }

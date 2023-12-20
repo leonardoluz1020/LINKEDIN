@@ -22,15 +22,15 @@
     <header>
         <nav>
             <ul>
-                <li>
+                <li class="icon_linkedin">
                     <a href="#">
                         <img src="./img/Vector.svg" alt="logo Linkedin">
                     </a>
+                    <div class="search hidden">
+                        <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
+                    </div>
                 </li>
-                <li class="hidden-search">
-                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar">
-                </li>
-                <li class="hidden-busca">
+                <li class="busca hidden">
                     <a href="#">
                         <img src="./img/icone-busca.svg" alt="pesquisa">
                     </a>
@@ -71,21 +71,21 @@
                         <span>Eu <svg role="none" aria-hidden="true" class="global-nav__icon global-nav__icon--small"
                                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                 data-supported-dps="16x16" data-test-icon="caret-small">
-
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
                 </li>
-                <li class="hidden-solucoes">
+                <li class="solucoes hidden">
                     <a href="#" class="barra">
                         <img src="./img/icone-solucoes.svg" alt="icone soluções">
                         <span>Soluções</span>
                     </a>
-                </li>
-                <li class="hidden-premium">
-                    <a href="#">
-                        <span class="premium">Experimente por apenas BRL0: Premium</span>
-                    </a>
-                </li>
+                    <div class="premium hidden">
+                        <a href="#">
+                            <span class="premium">Experimente Premium grátis</span>
+                        </a>
+                    </div>
+                </li>                
             </ul>
         </nav>
     </header>
