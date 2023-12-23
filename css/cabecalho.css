@@ -24,6 +24,10 @@ body header nav ul .hidden {
     display: none;
 }
 
+body header nav ul .busca{
+    display: block;
+}
+
 @media screen and (min-width: 720px) {
 
     body header nav ul .solucoes,
@@ -71,17 +75,16 @@ body header nav ul .hidden {
     }
 
     body header nav ul {
-        padding-left: 5rem;
+        padding-left: 2.1rem;
         justify-content: center;
-        gap: 1.5rem;
+        align-items: center;
+        gap: .5rem;
     }
-
 
     body header nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: .1rem;
         color: var(--texto-secundario);
     }
 
