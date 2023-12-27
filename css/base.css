@@ -17,15 +17,27 @@ body {
     color: var(--texto-primario);
     font-family: var(--font-family-roboto);
     font-weight: 400;
-    font-size: .75rem;
+    font-size: .8rem;
 }
 
 body aside {
     display: none;
 }
 
-/* Display Grid */
+@media screen and (min-width: 720px) {
+    body main {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    body main {
+        align-items: end;
+    }
+    /* Display Grid */
     body aside {
         display: block;
     }
