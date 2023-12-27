@@ -9,7 +9,7 @@
     --font-family-roboto: "Roboto", Arial, sans-serif;
     --fund-card: #1B2226;
     --input: #38434F;
-    --cor-ouro:#e9a53f;
+    --cor-ouro: #e9a53f;
 }
 
 body {
@@ -18,4 +18,37 @@ body {
     font-family: var(--font-family-roboto);
     font-weight: 400;
     font-size: .75rem;
+}
+
+body aside {
+    display: none;
+}
+
+/* Display Grid */
+@media screen and (min-width: 1024px) {
+    body aside {
+        display: block;
+    }
+
+    body {
+        display: grid;
+        grid-template-areas:
+            " header header "
+            " main aside"
+        ;
+        grid-template-columns: minmax(600px, 1.8fr) 1fr;
+        column-gap: 2.5rem;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    aside {
+        grid-area: aside;
+    }
 }

@@ -78,7 +78,7 @@ body header nav ul .busca{
         padding-left: 2.1rem;
         justify-content: center;
         align-items: center;
-        gap: .5rem;
+        gap: 1rem;
     }
 
     body header nav ul li a {
