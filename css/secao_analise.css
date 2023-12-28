@@ -1,0 +1,61 @@
+main .card_analise {
+    margin-top: .5rem;
+    background-color: var(--fund-card);
+    padding: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main .card_analise h2 {
+    padding: var(--padding-card-analise);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+main .card_analise .card-icon-alert {
+    padding: var(--padding-card-analise);
+    padding-top: .3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--texto-secundario);
+}
+
+main .card_analise .container {
+    padding: var(--padding-card-analise);
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main .card_analise .container div {
+    padding: .5rem 0 .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+main .card_analise .container div svg {
+    line-height: 50px;
+}
+
+main .card_analise .container div span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main .card_analise .container div .sub-title-span{
+    font-weight: 400;
+}
+
+main .card_analise .card-pesquisas svg{
+    width: 45px;
+}
+
+main .card_analise .span-analise{
+    border-top: 1px solid var(--texto-borda);
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
