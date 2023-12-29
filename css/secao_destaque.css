@@ -1,5 +1,5 @@
 main .card__destaque {
-    margin-top: .5rem;
+    margin-top: var(--margin-top-secao);
     background-color: var(--fund-card);
     padding: 1rem;
     display: flex;
@@ -54,9 +54,9 @@ main .card__destaque .container__card .card__publicacao .like__comentario {
 
 @media screen and (min-width: 720px) {
     main .card__destaque {
-        width: 85%;
+        width: var(--width-table);
         padding: 0;
-        border-radius: 16px;
+        border-radius: var(--border-table-desktop);
     }
 
     main .card__destaque .title {
@@ -82,6 +82,6 @@ main .card__destaque .container__card .card__publicacao .like__comentario {
 
 @media screen and (min-width: 1024px) {
     main .card__destaque {
-        max-width: 700px;
+        max-width: var(--max-width-desktop);
     }
 }

@@ -1,5 +1,5 @@
 main .perfil {
-    margin-top: 1rem;
+    margin-top: calc(var(--margin-top-secao) + 3rem);
     position: relative;
     background-color: var(--fund-card);
 }
@@ -9,7 +9,6 @@ main .perfil .foto-fundo {
     background-image: url('../img/Imagem\ de\ capa.png');
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 16px 16px 0 0;
 }
 
 main .perfil .foto-perfil {
@@ -100,9 +99,9 @@ main .perfil .hidden {
     }
 
     main .perfil {
-        width: 85%;
-        padding: 0;
-        border-radius: 0 0 16px 16px;
+        width: var(--width-table);
+        border-radius: var(--border-table-desktop);
+        margin-top: calc(var(--margin-top-secao) + 1rem);
     }
 
     main .perfil .container__personal-information {
@@ -148,22 +147,16 @@ main .perfil .hidden {
     }
 
     main .perfil {
-        position: relative;
-        max-width: 700px;
+        max-width: var(--max-width-desktop);
         max-height: 530px;
-        margin: 2rem 0 1rem 0;
-        background-color: var(--fund-card);
-        border-radius: 16px;
-    }
-
-    main .perfil .foto-fundo {
-        height: 11rem;
+        /*Calc marigin top + 1.5 distancia do header*/
+        margin-top: calc(var(--margin-top-secao) + 1.5rem);
     }
 
     main .perfil .foto-perfil {
         position: absolute;
         top: 70px;
-        left: 20px;
+        left: 15px;
         width: 9rem;
     }
 }

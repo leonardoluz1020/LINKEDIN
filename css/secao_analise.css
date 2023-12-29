@@ -1,5 +1,5 @@
 main .card_analise {
-    margin-top: .5rem;
+    margin-top: var(--margin-top-secao);
     background-color: var(--fund-card);
     padding: 2rem 0 1rem 0;
     display: flex;
@@ -44,18 +44,63 @@ main .card_analise .container div span {
     font-weight: 600;
 }
 
-main .card_analise .container div .sub-title-span{
+main .card_analise .container div .sub-title-span {
     font-weight: 400;
 }
 
-main .card_analise .card-pesquisas svg{
+main .card_analise .card-pesquisas svg {
     width: 45px;
 }
 
-main .card_analise .span-analise{
+main .card_analise .span-analise {
     border-top: 1px solid var(--texto-borda);
     padding-top: 1rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
+}
+
+@media screen and (min-width: 720px) {
+    main .card_analise {
+        width: var(--width-table);
+        border-radius: var(--border-table-desktop);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main .card_analise {
+        max-width: var(--max-width-desktop);
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "card-icon-alert card-icon-alert card-icon-alert"
+            "card-visualizacao card-impressoes card-pesquisas"
+            "span-analise span-analise span-analise"
+        ;
+        grid-template-columns: repeat(3, 33.333%);
+    }
+
+    main .card_analise h2 {
+        grid-area: titulo;
+    }
+    main .card_analise .card-icon-alert{
+        grid-area: card-icon-alert;
+    }
+    main .card_analise .card-visualizacao{
+        grid-area: card-visualizacao;
+    }
+    main .card_analise .card-impressoes {
+        grid-area: card-impressoes;
+    }
+    main .card_analise .card-pesquisas{
+        grid-area: card-pesquisas;
+    }
+    main .card_analise .span-analise{
+        grid-area: span-analise;
+    }
+
+    main .card_analise .container svg,
+    main .card_analise .card-pesquisas svg {
+        width: 75px;
+    }
 }

@@ -11,6 +11,10 @@
     --input: #38434F;
     --cor-ouro: #e9a53f;
     --padding-card-analise: 0 1.5rem;
+    --max-width-desktop: 700px;
+    --width-table: 85%;
+    --margin-top-secao: .5rem;
+    --border-table-desktop: 16px;
 }
 
 body {
@@ -38,6 +42,7 @@ body aside {
     body main {
         align-items: end;
     }
+
     /* Display Grid */
     body aside {
         display: block;
@@ -49,8 +54,8 @@ body aside {
             " header header "
             " main aside"
         ;
-        grid-template-columns: minmax(600px, 1.8fr) 1fr;
-        column-gap: 2.5rem;
+        grid-template-columns: minmax(var(--max-width-desktop), 2fr) 1fr;
+        column-gap: 1rem;
     }
 
     header {
