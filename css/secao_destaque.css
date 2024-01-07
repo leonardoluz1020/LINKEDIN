@@ -1,9 +1,5 @@
 main .card__destaque {
-    margin-top: var(--margin-top-secao);
-    background-color: var(--fund-card);
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
 }
 
@@ -32,8 +28,15 @@ main .card__destaque .container__card p {
     line-height: 1.25rem;
 }
 
+main .card__destaque .container__card .card__publicacao {
+    display: flex;
+    flex-direction: column;
+}
+
 main .card__destaque .container__card .card__publicacao img {
-    width: 100%;
+    align-self: center;
+    width: 80%;
+    max-height: 550px;
     border-radius: 6px;
 }
 
@@ -71,6 +74,7 @@ main .card__destaque .container__card .card__publicacao .like__comentario {
 
     main .card__destaque .container__card .card__publicacao img {
         max-width: 280px;
+        height: auto;
         padding: 0 .5rem;
     }
 
@@ -78,10 +82,4 @@ main .card__destaque .container__card .card__publicacao .like__comentario {
         justify-content: space-around;
     }
 
-}
-
-@media screen and (min-width: 1024px) {
-    main .card__destaque {
-        max-width: var(--max-width-desktop);
-    }
 }

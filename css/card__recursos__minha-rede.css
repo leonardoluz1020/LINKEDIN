@@ -1,0 +1,73 @@
+main .card__recursos__minha-rede {
+    padding-top: 2rem;
+}
+
+main .card__recursos__minha-rede .bloco__recursos {
+    margin: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main .card__recursos__minha-rede .bloco__recursos h2,
+main .card__recursos__minha-rede .bloco__recursos .card-icon-alert {
+    padding: 0;
+}
+
+main .card__recursos__minha-rede .bloco__recursos .recursos,
+main .card__recursos__minha-rede .bloco__minha-rede {
+    padding: .5rem;
+    display: grid;
+    grid-template-areas:
+        "svg descricao"
+        "svg texto"
+    ;
+    grid-template-columns: 40px auto;
+    grid-template-rows: auto;
+    column-gap: .2rem;
+    row-gap: .5rem;
+    border-bottom: 1px solid var(--texto-borda);
+}
+
+main .card__recursos__minha-rede .bloco__recursos .recursos svg,
+main .card__recursos__minha-rede .bloco__minha-rede svg {
+    grid-area: svg;
+}
+
+main .card__recursos__minha-rede .bloco__recursos .recursos .descricao-recursos,
+main .card__recursos__minha-rede .bloco__minha-rede .descricao-recursos {
+    grid-area: descricao;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+main .card__recursos__minha-rede .bloco__recursos .recursos .texto-recursos,
+main .card__recursos__minha-rede .bloco__minha-rede .texto-recursos {
+    grid-area: texto;
+    font-weight: 400;
+}
+
+main .card__recursos__minha-rede .bloco__minha-rede {
+    margin: 0 1.5rem;
+    border: none;
+}
+
+main .card__recursos__minha-rede .mais-recursos {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    border-top: 1px solid var(--texto-borda);
+}
+
+@media screen and (min-width: 720px) {
+
+    main .card__recursos__minha-rede {
+        width: var(--width-table);
+        border-radius: var(--border-table-desktop);
+    }
+
+    main .card__recursos__minha-rede .bloco__recursos .card-icon-alert {
+        padding-top: .4rem;
+    }
+}

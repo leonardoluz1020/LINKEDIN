@@ -7,6 +7,7 @@ aside .card__visualizacao {
     padding: 1rem 0 1rem 1rem;
     background-color: var(--fund-card);
     border-radius: 16px;
+    margin-bottom: .5rem;
 }
 
 aside .card__visualizacao .card_title {
@@ -46,4 +47,5 @@ aside .card__visualizacao .contato button{
     max-width: 10rem;
     border-radius: 16px;
     border: 1px solid var(--texto-primario);
+    cursor: pointer;
 }

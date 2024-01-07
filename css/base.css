@@ -11,7 +11,7 @@
     --input: #38434F;
     --cor-ouro: #e9a53f;
     --padding-card-analise: 0 1.5rem;
-    --max-width-desktop: 700px;
+    --max-width-desktop: 750px;
     --width-table: 85%;
     --margin-top-secao: .5rem;
     --border-table-desktop: 16px;
@@ -29,6 +29,28 @@ body aside {
     display: none;
 }
 
+.container__secao {
+    margin-top: var(--margin-top-secao);
+    background-color: var(--fund-card);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-icon-alert {
+    padding: var(--padding-card-analise);
+    padding-top: .3rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--texto-secundario);
+}
+
+.titulo-card {
+    padding: var(--padding-card-analise);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 @media screen and (min-width: 720px) {
     body main {
         padding-top: 2rem;
@@ -43,12 +65,17 @@ body aside {
         align-items: end;
     }
 
+    .max-w-desktop {
+        max-width: var(--max-width-desktop);
+    }
+
     /* Display Grid */
     body aside {
         display: block;
     }
 
     body {
+        padding-right: .6rem;
         display: grid;
         grid-template-areas:
             " header header "

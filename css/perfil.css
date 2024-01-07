@@ -13,8 +13,8 @@ main .perfil .foto-fundo {
 
 main .perfil .foto-perfil {
     position: absolute;
-    top: 65px;
-    left: 10px;
+    top: 55px;
+    left: 15px;
     width: 9rem;
     border: 4px solid black;
     border-radius: 160px;
@@ -142,21 +142,7 @@ main .perfil .hidden {
 }
 
 @media screen and (min-width: 1024px) {
-    main .perfil .container__personal-information .institutions {
-        display: block;
-    }
-
-    main .perfil {
-        max-width: var(--max-width-desktop);
-        max-height: 530px;
-        /*Calc marigin top + 1.5 distancia do header*/
+    main .perfil {        
         margin-top: calc(var(--margin-top-secao) + 1.5rem);
-    }
-
-    main .perfil .foto-perfil {
-        position: absolute;
-        top: 70px;
-        left: 15px;
-        width: 9rem;
     }
 }
