@@ -1,0 +1,101 @@
+main .card__diplomas {
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+
+main .card__diplomas .p-width {
+    padding: 1rem 1.5rem 0 1.5rem;
+}
+
+main .card__diplomas .seguidores {
+    padding: 0 1.5rem;
+    font-weight: 500;
+    color: var(--azul-50);
+}
+
+main .card__diplomas .button-public-create {
+    width: 165px;
+    margin: .5rem 1.5rem;
+}
+
+main .card__diplomas .container__botoes {
+    padding: .5rem 1.5rem;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+main .card__diplomas .button-public-create,
+main .card__diplomas .container__botoes button {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    color: var(--azul-50);
+    border: 1px solid var(--azul-50);
+    border-radius: 16px;
+}
+
+main .card__diplomas .container__botoes .btn-green {
+    background-color: #37c898;
+    color: var(--fundo-escuro);
+    border: none;
+}
+
+main .card__diplomas .container__botoes .btn-white {
+    border: 1px solid var(--texto-primario);
+    color: var(--texto-primario);
+}
+
+main .card__diplomas .container__public-diploma {
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 64px auto;
+    grid-template-rows: auto;
+    gap: .5rem;
+}
+
+main .card__diplomas .container__public-diploma .name-perfil {
+    grid-area: 1/1/2/3;
+    color: var(--texto-secundario);
+    font-size: .8rem;
+}
+
+main .card__diplomas .container__public-diploma .title-perfil {
+    grid-area: 2/1/3/3;
+}
+
+main .card__diplomas .container__public-diploma .img-diploma {
+    max-width: 64px;
+    grid-area: 3/1/5/2;
+}
+
+main .card__diplomas .container__public-diploma .name-formacao {
+    grid-area: 3/2/4/3;
+}
+
+main .card__diplomas .container__public-diploma .texto-formacao {
+    grid-area: 4/2/5/3;
+}
+
+main .card__diplomas .container__public-diploma .enjoy-formcao {
+    grid-area: 5/1/6/3;
+    border-bottom: 1px solid var(--texto-borda);
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+
+@media screen and (min-width: 720px) {
+    main .card__diplomas .container__botoes .btn-dsk {
+        display: none;
+    }
+
+    main .card__diplomas .container__botoes .btn-h {
+        display: block;
+    }
+
+    main .card__diplomas {
+        width: var(--width-table);
+        border-radius: var(--border-table-desktop);
+    }
+
+}

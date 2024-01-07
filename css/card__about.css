@@ -1,0 +1,20 @@
+.card__about {
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card__about h2 {
+    padding: 1.5rem;
+}
+
+.card__about p {
+    padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+    main .card__about {
+        width: var(--width-table);
+        border-radius: var(--border-table-desktop);
+
+    }
+}

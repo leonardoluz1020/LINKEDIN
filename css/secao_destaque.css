@@ -3,13 +3,6 @@ main .card__destaque {
     gap: 1rem;
 }
 
-main .card__destaque .title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--texto-primario);
-    line-height: 1.9rem;
-}
-
 main .card__destaque .container__card {
     display: flex;
     flex-direction: column;

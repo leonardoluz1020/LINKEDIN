@@ -1,6 +1,7 @@
 :root {
     --fundo-escuro: #000;
     --primaria: #70B5F9;
+    --azul-50: #71b7fb;
     --transparente: rgba(255, 255, 255, 0.00);
     --texto-primario: rgba(255, 255, 255, 0.90);
     --texto-secundario: rgba(255, 255, 255, 0.60);
@@ -45,10 +46,11 @@ body aside {
     color: var(--texto-secundario);
 }
 
-.titulo-card {
+.title{
     padding: var(--padding-card-analise);
     font-size: 1.25rem;
     font-weight: 600;
+    line-height: 1.9rem;
 }
 
 @media screen and (min-width: 720px) {
